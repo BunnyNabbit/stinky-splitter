@@ -19,6 +19,8 @@ const showExpandedTimerWatcher = new SmartI32Watcher("ggg.exe", 0x169a10)
 const ofgm114Id: i32 = 11
 /** Goal */
 const ofgm122Id: i32 = 15
+/** Final goal */
+const ofgm165Id: i32 = 37
 
 let splitOnUniqueStage: bool = false
 
@@ -62,7 +64,7 @@ export function update(): void {
 	if (playingMusicWatcher.changed) {
 		if (playingMusicWatcher.current === ofgm114Id) {
 			resetState()
-		} else if (playingMusicWatcher.current === ofgm122Id) {
+		} else if (playingMusicWatcher.current === ofgm122Id || playingMusicWatcher.current === ofgm165Id) {
 			Timer.split()
 		}
 	}
