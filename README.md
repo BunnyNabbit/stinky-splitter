@@ -2,7 +2,8 @@
 
 An auto-splitter for _Gassy GaoGao_.
 
-- Split, (just once). No refunds.
+- Auto splits! Splits at goal, or at stage transitions.
+- Tracks in-game timer.
 - Resets when You Reset.
 
 ## WTF?
