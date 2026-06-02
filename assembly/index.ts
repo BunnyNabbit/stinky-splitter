@@ -25,6 +25,7 @@ let splitOnUniqueStage: bool = false
 function resetState(): void {
 	stagesEntered = new Set()
 	stagesEntered.add(1)
+	Timer.reset()
 	resetting = true
 }
 
