@@ -44,7 +44,15 @@ jobs:
       - name: Build
         run: pnpm run asbuild:release
 
-      - name: Release
+      - name: Release on latest
+        uses: softprops/action-gh-release@v2.2.2
+        with:
+          files: build/stinky-splitter.wasm
+          name: Latest
+          tag_name: latest
+          body: Latest version.
+
+      - name: Increment and release on versioned
         run: pnpm exec release-it ${{ inputs.increment }}
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
