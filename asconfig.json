@@ -7,8 +7,8 @@
 			"debug": true
 		},
 		"release": {
-			"outFile": "build/release.wasm",
-			"textFile": "build/release.wat",
+			"outFile": "build/stinky-splitter.wasm",
+			"textFile": "build/stinky-splitter.wat",
 			"sourceMap": true,
 			"optimizeLevel": 3,
 			"shrinkLevel": 0,
