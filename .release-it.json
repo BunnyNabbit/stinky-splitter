@@ -4,6 +4,7 @@
 		"publish": false
 	},
 	"github": {
+		"release": true,
 		"draft": true,
 		"releaseName": "v${releaseName}",
 		"assets": ["build/stinky-splitter.wasm"]
