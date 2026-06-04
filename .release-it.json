@@ -1,0 +1,11 @@
+{
+	"$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
+	"npm": {
+		"publish": false
+	},
+	"github": {
+		"draft": true,
+		"releaseName": "v${releaseName}",
+		"assets": ["build/stinky-splitter.wasm"]
+	}
+}
