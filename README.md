@@ -15,6 +15,6 @@ Yeah. [It's a game](https://notes.bunnynabbit.com/Gassy-GaoGao).
 ## Development
 
 - `corepack enable pnpm`
-- `pnpm i`
+- `pnpm install`
 
-to build : `pnpm run asbuild:release`
+To build: `pnpm run asbuild:release`
