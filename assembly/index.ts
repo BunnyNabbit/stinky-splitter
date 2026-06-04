@@ -8,7 +8,7 @@ let initialized: bool = false
 let currentProcessId: Process.ProcessId = 0
 let resetting: bool = true
 let stagesEntered: Set<number> = new Set()
-	stagesEntered.add(1)
+stagesEntered.add(1)
 
 const timeWatcher = new SmartI32Watcher("ggg.exe", 0x15d0a0)
 const stageWatcher = new SmartI32Watcher("ggg.exe", 0x15115c)
