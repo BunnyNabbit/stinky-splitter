@@ -6,7 +6,7 @@
 	"github": {
 		"release": true,
 		"draft": true,
-		"releaseName": "v${releaseName}",
+		"releaseName": "v${version}",
 		"assets": ["build/stinky-splitter.wasm"]
 	}
 }
