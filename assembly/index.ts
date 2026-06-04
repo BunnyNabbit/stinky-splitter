@@ -39,9 +39,7 @@ export function update(): void {
 	Timer.pauseGameTime()
 	if (currentProcessId === 0) {
 		currentProcessId = Process.attach("ggg.exe")
-		if (currentProcessId === 0) {
-			return
-		}
+		if (currentProcessId === 0) return
 	}
 	if (!Process.isOpen(currentProcessId)) {
 		Process.detach(currentProcessId)
