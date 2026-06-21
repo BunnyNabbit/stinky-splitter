@@ -1,5 +1,6 @@
 import "asr-assemblyscript/runtime"
 import { SmartI32Watcher } from "./SmartI32Watcher"
+import { Addresses } from "./addresses/1.32"
 import * as Timer from "asr-assemblyscript/timer"
 import * as UserSettings from "asr-assemblyscript/userSettings"
 import * as Process from "asr-assemblyscript/process"
@@ -10,11 +11,11 @@ let resetting: bool = true
 let stagesEntered: Set<number> = new Set()
 stagesEntered.add(1)
 
-const timeWatcher = new SmartI32Watcher("ggg.exe", 0x15d0a0)
-const stageWatcher = new SmartI32Watcher("ggg.exe", 0x15115c)
-const deathsWatcher = new SmartI32Watcher("ggg.exe", 0x1676a8)
-const playingMusicWatcher = new SmartI32Watcher("ggg.exe", 0x151220)
-const showExpandedTimerWatcher = new SmartI32Watcher("ggg.exe", 0x169a10)
+const timeWatcher = new SmartI32Watcher("ggg.exe", Addresses.time)
+const stageWatcher = new SmartI32Watcher("ggg.exe", Addresses.stage)
+const deathsWatcher = new SmartI32Watcher("ggg.exe", Addresses.deaths)
+const playingMusicWatcher = new SmartI32Watcher("ggg.exe", Addresses.playingMusic)
+const showExpandedTimerWatcher = new SmartI32Watcher("ggg.exe", Addresses.showExpandedTimer)
 /** "prepare for adventure!" or somezhing */
 const ofgm114Id: i32 = 11
 /** Goal */
