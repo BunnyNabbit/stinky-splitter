@@ -1,7 +1,7 @@
 import { Address } from "asr-assemblyscript/process"
 
 export abstract class BaseGassyGaoGaoAddresses {
-	/** The in-game time. Only increments when Aruppy can be controlled. */
+	/** The in-game time in frames. Only increments when Aruppy can be controlled. */
 	static readonly time: Address
 	/** The current stage. This changes after a transition. */
 	static readonly stage: Address
